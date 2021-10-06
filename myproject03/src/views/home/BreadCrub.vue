@@ -1,7 +1,9 @@
 <template>
   <div class="bread">
 <el-breadcrumb separator="/">
-  <el-breadcrumb-item v-for='v in lists' :key='v.path'>{{v.meta.title}}</el-breadcrumb-item>
+  <el-breadcrumb-item v-for='v in lists' :key='v.path'>
+    <router-link :to='v.path'>{{v.meta.title}}</router-link>
+     </el-breadcrumb-item>
   
 </el-breadcrumb>
   </div>
@@ -22,9 +24,8 @@ export default {
     this.lists=this.$route.matched;
   },
   watch:{
-    $route(to,from){
-      console.log(to);
-      this.lists=to.matched
+    $route(to){
+            this.lists=to.matched
     }
   }
 }

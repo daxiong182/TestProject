@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wms">
     <h1>信息管理</h1>
     <div class="container">
 <router-view></router-view>
@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style>
+.wms{
+  position: relative; 
+  }
 .container{
   position: absolute;
   top: 300px;

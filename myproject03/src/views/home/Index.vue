@@ -13,7 +13,9 @@
     </el-header>
 
     <el-main>
+      <div class="mycontainer">
       <router-view></router-view>
+      </div>
     </el-main>
   </el-container>
 </el-container>
@@ -73,6 +75,11 @@ export default {
     top: 50%;
     transform: translateY(-50%);
   }
-  
+  .mycontainer{
+    width: 100%;
+    height: 25%;
+    padding: 0;
+    margin: 0;
+  }
 </style>
 

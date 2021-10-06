@@ -25,9 +25,13 @@
       <el-submenu index="/wms">
           <template slot="title"> <i class="el-icon-s-promotion"></i>信息管理</template>
           <el-menu-item index="/wms/list"><i class="el-icon-notebook-2"></i>信息列表</el-menu-item>
-          
-        </el-submenu>
+      </el-submenu>
 
+        <el-submenu index="/user">
+          <template slot="title"><i class="el-icon-user-solid"></i>用户管理</template>
+          <el-menu-item index="/user/list"><i class="el-icon-pie-chart"></i>用户统计</el-menu-item>
+          <el-menu-item index="/user/role"><i class="el-icon-pie-chart"></i>角色统计</el-menu-item>
+        </el-submenu>
     </el-menu>
   </div>
 </template>

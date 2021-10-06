@@ -53,6 +53,30 @@ const routes = [
                         import ('../views/home/wms/List.vue')
                 }]
             },
+
+            {
+                path: '/user', //用户管理user
+                name: 'user',
+                meta: { title: "用户管理" },
+                component: () =>
+                    import ('../views/home/user/Index.vue'),
+                children: [{
+                        path: '/user/list',
+                        name: 'wmsList',
+                        meta: { title: "用户统计" },
+                        component: () =>
+                            import ('../views/home/user/List.vue')
+                    },
+                    {
+                        path: '/user/role',
+                        name: 'userole',
+                        meta: { title: "角色统计" },
+                        component: () =>
+                            import ('../views/home/user/Role.vue')
+                    },
+                ]
+            },
+
         ]
     },
 
