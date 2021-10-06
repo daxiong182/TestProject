@@ -1,21 +1,23 @@
 <template>
-  <div>
+  <div class='home-index'>
     
   <el-container>
      
-  <el-aside width="200px">
+  <el-aside width="200px" >
         <Nav></Nav>
   </el-aside>
 
   <el-container>
-    <el-header>
+    <el-header class="myheader">
       <bread-crub class="mybread"></bread-crub>
     </el-header>
 
-    <el-main>
+    <el-main class="mymain">
+
       <div class="mycontainer">
       <router-view></router-view>
       </div>
+
     </el-main>
   </el-container>
 </el-container>
@@ -47,7 +49,7 @@ export default {
     color: #333;
     height: 10vh;
     text-align: center;
-    line-height: 10vh;
+    height: 10vh;
     position: relative;
   }
   
@@ -55,31 +57,43 @@ export default {
     background-color: #D3DCE6;
     color: #333;
     text-align: center;
-    line-height: 95vh;
+    height: 100vh;
   }
   
-  .el-main {
+  .home-index .el-main {
     background-color: #E9EEF3;
     color: #333;
     text-align: center;
-    line-height: 85vh;
-  }
+    height: 90vh;
+     }
   
   body > .el-container {
     margin-bottom: 10vh;
   }
-  
+ 
+  .el-header.myheader{
+    background: url('../../../public/dht.jpeg');
+    opacity: .6;
+    border-radius: 5px;
+    background-size: cover;
+    
+  }
   .mybread{
     position: absolute;
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
   }
+  /* 主容器 相对定位 */
+  .mymain{
+    position:relative;
+    
+    
+  }
+/* 一级子容器 */
   .mycontainer{
-    width: 100%;
-    height: 25%;
-    padding: 0;
-    margin: 0;
+    
+   
   }
 </style>
 

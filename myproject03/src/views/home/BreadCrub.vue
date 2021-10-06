@@ -32,7 +32,9 @@ export default {
 </script>
 
 <style>
-
+.bread a{
+  color: #fff;
+}
 
 
 </style>

@@ -8,7 +8,7 @@
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b"
-      style='height:98vh'
+      style='height:99vh'
       router
       >
        
@@ -32,6 +32,7 @@
           <el-menu-item index="/user/list"><i class="el-icon-pie-chart"></i>用户统计</el-menu-item>
           <el-menu-item index="/user/role"><i class="el-icon-pie-chart"></i>角色统计</el-menu-item>
         </el-submenu>
+        
     </el-menu>
   </div>
 </template>
