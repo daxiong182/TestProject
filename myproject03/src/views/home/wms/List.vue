@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='message-list'>
     <h1>信息列表</h1>
   </div>
 </template>
